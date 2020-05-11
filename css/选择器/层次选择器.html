@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <style>
+        /*p{*/
+            /*background: deepskyblue;*/
+        /*}*/
+
+        /*后代选择器*/
+        body p{
+            background: aqua;
+        }
+
+        /*子选择器*/
+        body>p{
+            background: beige;
+        }
+
+        /*相邻兄弟选择器*/
+        .active +p{
+            background: chartreuse;
+        }
+
+        /*通用选择器*/
+        .active ~p{
+            background: chartreuse;
+        }
+
+    </style>
+<body>
+    <p>P1</p>
+    <p class="active">P2</p>
+    <p>P3</p>
+    <p>p00</p>
+    <ul>
+        <li>
+            <p>p4</p>
+        </li>
+        <li>
+            <p>p5</p>
+        </li>
+        <li>
+            <p>p6</p>
+        </li>
+    </ul>
+</body>
+</html>
